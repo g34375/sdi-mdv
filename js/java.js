@@ -101,7 +101,31 @@ say( enemys[0] + " health is at " + goblinNew );
 say( enemys[0] + " is dead.");
 say( character + " looted " + goblinMain[2] );
 
+say( character + " starts to travel." );
 
+towns=["Lumbridge","Westfall","RedRidge","Dustwallow Marsh"];
+var i=0;
+for (;towns[i];)
+{
+say( character + " travels to " + towns[i] );
+i++;
+}
+
+var getGreetingByName = function(name) {
+	var currentHour = (new Date()).getHours(),
+		timeOfDay,
+		greeting;
+	if (currentHour < 12) { timeOfDay = "morning"; }
+	else if (currentHour < 17) { timeOfDay = "afternoon"; }
+	else { timeOfDay = "evening"; }
+	greeting = "Good " + timeOfDay + ", " + name + " welcome to " + towns[3];
+	return greeting;		
+};
+
+var fullGreeting = getGreetingByName(character);
+console.log(fullGreeting);
+
+say( character + " camps out for the night");
 
 
 

@@ -1,19 +1,8 @@
 
 
-
-
-var goblinMain = {
-			"health": 50,
-			"attack": 20,
-			"loot": 200
+var signAddress = { 
+     "Address"    :   "123 Dusty Way.", 
+     "City"       :   "DustWallow", 
+     "PostalCode" :   666
 };
 
-
-var characterMain = {
-	"characterMain": [
-		{
-			"health": 100,
-			"attack": 25,
-		}
-	]
-};

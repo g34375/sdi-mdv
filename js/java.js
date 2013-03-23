@@ -1,10 +1,23 @@
 // Project 2 SDI-1303
 // Seth White
 
+/*alert(" Welcome to Venice Market place. Best deals in the world!");
+
+var ans = prompt("What is your name sir?");
+if (ans) {
+	alert("Well then, " + ans + " Welcome, feel free to explore!");
+}
+else {
+	alert("You refused to answer");
+}*/
+
 var character = "Peter";
 var currentCoins = 4000;
 var merchants = ["hideTrader", "dyeTrader", "stoneTrader", "merchant"];
 var say = function(message) {console.log(message); };
+var maxHealth = 100;
+var enemys = ["goblin", "dragon"]; 
+var agro = true
 
 
 var getGreetingByName = function(name) {
@@ -43,9 +56,25 @@ console.log("Thanks for buying " + totalHides + " perfect hides!");
 
 say("please come again " + character + "!");
 
-var currentCoins = 3750;
+say(character + " stops to count his coins...");
+var currentCoins = 0;
+while (currentCoins <= 3750) {
+	console.log(currentCoins + " gold coins");
+	currentCoins = currentCoins + 100;
+};
+say("Yes! I have enough coins, I shall continue to shop!");
 
-say("**" + character + " stops to go home!**");
+if (agro = true) {
+	say("A goblin has appeared, prepare to fight!");
+};
+
+if (argo = true) {
+	maxHealth
+};
+
+
+
+
 
 
 	

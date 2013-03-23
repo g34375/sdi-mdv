@@ -65,12 +65,46 @@ while (currentCoins <= 3750) {
 say("Yes! I have enough coins, I shall continue to shop!");
 
 if (agro = true) {
-	say("A goblin has appeared, prepare to fight!");
+	say("An enemy has appeared, prepare to fight!");
 };
 
+var goblinMain = [
+			//health: 
+			50,
+			//attack:
+			 20 + " damage",
+			//loot:
+			 200 + " gold" ];
+			 
+ var characterMain = [
+			//health: 
+			100,
+			//attack:
+			 50 + " damage",
+			//loot:
+			 200 ];
+
+
 if (argo = true) {
-	maxHealth
+	if ( enemys[0] ) {
+		say("The enemy is a " + enemys[0]);
+		say(enemys[0] + " has hit you for " + goblinMain[1]);
+	}
 };
+var healthNew = 100 - 20;
+say( character + " health is at " + healthNew );
+
+say(character + " has hit " + enemys[0] + " for " + characterMain[1]);
+
+var goblinNew = 50 - 50;
+say( enemys[0] + " health is at " + goblinNew );
+say( enemys[0] + " is dead.");
+say( character + " looted " + goblinMain[2] );
+
+
+
+
+
 
 
 
